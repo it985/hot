@@ -24,6 +24,6 @@ jobs:
         run: deno fmt --check
 
         env:
-          GITHUB_TOKEN: ${{ secrets.ACTIONS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
         with:
           draft: true
