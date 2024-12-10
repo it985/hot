@@ -45,6 +45,7 @@ jobs:
           git add .
           git commit -m "get data by github actions"
           git push
+      
       - name: Delete Workflow Runs
         uses: Mattraks/delete-workflow-runs@v2
         with:
