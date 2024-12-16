@@ -49,7 +49,7 @@ jobs:
       - name: Delete Workflow Runs
         uses: Mattraks/delete-workflow-runs@v2
         with:
-          retain_days: 30
           token: ${{ github.token }}
           repository: ${{ github.repository }}
+          retain_days: 30
           keep_minimum_runs: 6
