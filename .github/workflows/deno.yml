@@ -48,6 +48,11 @@ jobs:
 
 
   delete:
+    name: delete Workflow
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
       - name: Delete Workflow Runs
         uses: Mattraks/delete-workflow-runs@v2
         with:
